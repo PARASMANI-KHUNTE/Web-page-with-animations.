@@ -1,0 +1,25 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+/* App.css - Custom animation for smooth slide */
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Chain container animation */
+.chain-container {
+  animation: slideRightToLeft 10s linear infinite;
+}
+
+/* Pause the animation */
+.paused {
+  animation-play-state: paused;
+}
